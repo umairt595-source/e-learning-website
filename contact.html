@@ -38,7 +38,7 @@
         }
         
         .logo img {
-            width: 100px;
+            width: 80px;
             height: auto;
             transition: transform 0.3s;
         }
@@ -48,23 +48,24 @@
         }
         
         .logo span {
-            font-size: 30px;
+            font-size: 26px;
             font-weight: bold;
             color: white;
         }
         
         nav {
             display: flex;
-            gap: 20px;
+            gap: 15px;
         }
         
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 8px 15px;
             border-radius: 25px;
             transition: all 0.3s;
             font-weight: 500;
+            font-size: 14px;
         }
         
         nav a:hover {
@@ -74,7 +75,7 @@
         
         /* CONTACT SECTION */
         .contact-section {
-            padding: 80px 20px;
+            padding: 60px 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-align: center;
@@ -85,8 +86,8 @@
         }
         
         .contact-section h2 {
-            font-size: 48px;
-            margin-bottom: 40px;
+            font-size: 32px;
+            margin-bottom: 35px;
             animation: fadeInUp 1s ease-out;
         }
         
@@ -104,7 +105,7 @@
         .contact-icons {
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 30px;
             flex-wrap: wrap;
         }
         
@@ -141,15 +142,15 @@
         }
         
         .icon-box {
-            width: 100px;
-            height: 100px;
+            width: 85px;
+            height: 85px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            font-size: 35px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
         
         .icon-box.whatsapp {
@@ -165,8 +166,8 @@
         }
         
         .contact-item span {
-            margin-top: 15px;
-            font-size: 16px;
+            margin-top: 12px;
+            font-size: 15px;
             color: white;
             font-weight: 500;
         }
@@ -176,18 +177,85 @@
             background: #1e3c72;
             color: white;
             text-align: center;
-            padding: 20px;
-            font-size: 16px;
+            padding: 15px;
+            font-size: 14px;
         }
         
         /* RESPONSIVE */
         @media (max-width: 768px) {
+            header {
+                padding: 12px 20px;
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            .logo {
+                gap: 12px;
+            }
+            
+            .logo img {
+                width: 60px;
+            }
+            
+            .logo span {
+                font-size: 22px;
+            }
+            
+            nav {
+                gap: 10px;
+            }
+            
+            nav a {
+                padding: 6px 12px;
+                font-size: 13px;
+            }
+            
+            .contact-section {
+                padding: 50px 15px;
+            }
+            
             .contact-section h2 {
-                font-size: 32px;
+                font-size: 26px;
+            }
+            
+            .contact-icons {
+                gap: 25px;
+            }
+            
+            .icon-box {
+                width: 75px;
+                height: 75px;
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo span {
+                font-size: 20px;
+            }
+            
+            nav a {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+            
+            .contact-section h2 {
+                font-size: 22px;
+                margin-bottom: 25px;
             }
             
             .contact-icons {
                 gap: 20px;
+            }
+            
+            .icon-box {
+                width: 65px;
+                height: 65px;
+                font-size: 26px;
+            }
+            
+            .contact-item span {
+                font-size: 13px;
             }
         }
     </style>
